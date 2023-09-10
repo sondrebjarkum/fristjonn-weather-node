@@ -44,7 +44,7 @@ export const Root = (content) => `
 </head>
 <body>
 <h2>Værvarsel for Bryggebu</h2>
-<h3>${new Date().toLocaleString("no")}</h3>
+<h3>${new Date().toLocaleString("no", { timeZone: "Europe/Oslo" })}</h3>
 ${content}
 </body>
 </html>
