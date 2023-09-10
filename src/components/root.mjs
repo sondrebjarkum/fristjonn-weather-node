@@ -10,6 +10,9 @@ export const Root = (content) => `
     body{
       font-family: Sans-Serif;
     }
+    h2,h3{
+      text-align: center;
+    }
     table {
       margin: 0 auto;
     }
@@ -40,6 +43,8 @@ export const Root = (content) => `
   </style>
 </head>
 <body>
+<h2>Værvarsel for Bryggebu</h2>
+<h3>${new Date().toLocaleString("no")}</h3>
 ${content}
 </body>
 </html>
